@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vutu Gym</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1 id="logo" class="fade-in">vutu@Gym</h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="#services"><i class="fa-solid fa-list-check"></i> </i> Services</a></li>
+                <li><a href="#about"><i class="fa-solid fa-eject"></i> About</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2 class="fade-in">Achieve Your <span>Fitness Goals</span></h2>
+        <p class="fade-in">Join our gym and transform your body today!</p>
+        <a href="" class="btn">Join Now</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="p1">Welcome to FitZone, where fitness meets dedication.</p>
+        <div class="prent">
+            <div class="v">
+                <img src="https://i.pinimg.com/736x/65/c4/1c/65c41cf3b8ff5b90069939a514c6a0a8.jpg" alt="phto"
+                    class="img1">
+                <div class="span">
+                    <span>nature</span>
+                    <span>lake</span>
+                </div>
+                <h2 class="h2">cardio</h2>
+                <p class="p1">you know my name not my story </p>
+                <button class="button1">read more</button>
+            </div>
+            <div class="v">
+                <img src="data:image/jpeg;base64,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"
+                    alt="phto" class="img2">
+                <div class="span">
+                    <span>nature</span>
+                    <span>lake</span>
+                </div>
+                <h2 class="h2">classic</h2>
+                <p class="p1">you know my name not my stor</p>
+                <button class="button1">read more</button>
+            </div>
+            <div class="v">
+                <img src="https://i.pinimg.com/474x/ce/5d/ef/ce5def8843579599f40a9350b424c4c8.jpg" alt="phto"
+                    class="img3">
+                <div class="span">
+                    <span>nature</span>
+                    <span>lake</span>
+                </div>
+                <h2 class="h2">stgrenth traning</h2>
+                <p>you know my name not my stor </p>
+                <button class="button1">read more</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <h3>Personal Training</h3>
+            <p>One-on-one coaching to achieve your goals.</p>
+        </div>
+        <div class="service-box">
+            <h3>Group Classes</h3>
+            <p>Join fun and energetic group workouts.</p>
+        </div>
+        <div class="service-box">
+            <h3>Nutrition Plans</h3>
+            <p>Custom diet plans for maximum results.</p>
+        </div>
+    </section>
+    <section class="tranceform">
+        <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2024/05/Testimonials-section-on-Elliot-Fitness-min-1024x429.png"
+            alt="">
+        <p class="p1">so where are you, let's goo...</p>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email:somnath@gmail.com | Phone:</p>
+    </section>
+
+    <footer>
+        <p>© 2025 vutu@Gym. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

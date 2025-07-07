@@ -1,0 +1,408 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+}
+
+#logo {
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4d00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4d00;
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    background: url('https://www.avikalp.com/cdn/shop/products/MWZ3588_wallpaper3.jpg?v=1653228859') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#home span {
+    color: #ff4d00;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff4d00;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff6600;
+}
+
+
+section {
+    padding: 50px 20px;
+}
+
+
+.service-box {
+    background: #222;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    padding: 20px;
+    background: #222;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 5s ease-in-out;
+}
+
+.prent {
+    display: flex;
+}
+
+.img1 {
+    width: 189px;
+    ;
+    border-radius: 20px;
+    padding: 2px;
+    justify-content: center;
+    text-align: center;
+}
+
+.img2 {
+    width: 189px;
+    ;
+    border-radius: 20px;
+    height: 185px;
+    padding: 2px;
+    justify-content: center;
+    text-align: center;
+}
+
+.img3 {
+    width: 189px;
+    height: 180px;
+    border-radius: 20px;
+    padding: 2px;
+
+    justify-content: center;
+    text-align: center;
+}
+
+span {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1px;
+    box-shadow: inset 1px 1px 10px rgb(255, 119, 35);
+    font-size: small;
+
+}
+
+.p {
+    font-size: small;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    color: #ff6600;
+
+}
+
+.h2 {
+    padding: 1px;
+    text-align: center;
+    justify-content: center;
+    color: #ff3a3a;
+}
+
+.button1{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff6600;
+    /* box-shadow: inset 1px 1px 10px rgb(255, 102, 0); */
+    text-transform: uppercase;
+
+}
+
+.span {
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+}
+
+.v {
+    border-radius: 20px;
+    box-shadow: 1px 0.3px 5px 1px rgb(255, 102, 0);
+    width: 205px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    background-color: rgb(241, 235, 227);
+    padding: 8px;
+}
+
+.v:hover {
+    transform: scale(1.05);
+}
+.p1{
+    color: #ff6600;
+}
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 999;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul.nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: #111;
+        display: none;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav ul.nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul.nav-links li {
+        margin: 15px 0;
+    }
+}
+
+/* Optional animation for hamburger toggle */
+.hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+} 
+ /* Small Devices (Mobiles) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    #logo {
+        font-size: 22px;
+    }
+
+    nav ul.nav-links {
+        flex-direction: column;
+        width: 100%;
+        background: #111;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        display: none;
+        z-index: 999;
+    }
+
+    nav ul.nav-links.active {
+        display: flex;
+    }
+
+    nav ul.nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .bar {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .prent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1, .img2, .img3 {
+        width: 90%;
+        height: auto;
+    }
+
+    #home h2 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .service-box {
+        width: 95%;
+    }
+
+    .v {
+        width: 90%;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #logo {
+        font-size: 26px;
+    }
+
+    .prent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img1, .img2, .img3 {
+        width: 45%;
+        margin: 10px;
+    }
+
+    #home h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+
+    .v {
+        width: 45%;
+    }
+}
+
+/* Large Devices (Desktops and up) */
+@media (min-width: 1025px) {
+    .prent {
+        flex-direction: row;
+    }
+
+    .img1, .img2, .img3 {
+        width: 189px;
+    }
+
+    .v {
+        width: 205px;
+    }
+}
+
+
+
